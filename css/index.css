@@ -73,7 +73,7 @@ section{
     height: 100%;
     background-color: #2d2c2c;
     /* border-radius: 20rem; */
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 95%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 96%, 0% 100%);
 }
 
 .img-div{                        /* Image Part */
@@ -199,8 +199,26 @@ section{
 #toggle-button:hover{
     background-color: rgb(187, 240, 223) ;
 }
+@media only screen and (min-width:300px) and (max-width:1100px) {
+        section{
+            height: auto;
+        }
+        .left-div{
+            height: auto;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 96%, 0% 100%);
+        }
+}   
+@media only screen  and (min-width: 300px) and (max-width:900px) {
+    .left-div{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 100%, 0% 100%);
+    }
+}
 
-
+@media only screen and (min-width:300px) and (max-width:650px) {
+    section{
+        min-width: 650px;
+    }
+}
 
 
 
